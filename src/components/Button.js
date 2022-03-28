@@ -9,7 +9,7 @@ class Button extends React.Component {
         <button
           type="button"
           onClick={ onClick }
-          disabled={ disabled }
+          disabled={ disabled } // requisito 2 - estar desabilitado ao entrar na pagina
         >
           { name }
         </button>

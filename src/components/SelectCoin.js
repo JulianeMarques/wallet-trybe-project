@@ -7,7 +7,7 @@ class SelectCoin extends Component {
     const { onChange, coins } = this.props;
     const keys = Object.keys(coins);
     function remove(coin) {
-      if (coin !== 'USDT') {
+      if (coin !== 'USDT') { /* requisito 7 - Remova das informações trazidas pela API a opção 'USDT' (Dólar Turismo). */
         return coin;
       }
     }

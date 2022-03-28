@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+// Importa o connect para realizar a conexão entre o mapStateToProps e o mapDispatchToProps com o componente Header
 import { connect } from 'react-redux';
 
 class Header extends React.Component {
@@ -7,15 +8,15 @@ class Header extends React.Component {
     const { getEmail } = this.props;
     return (
       <div className="container-header">
-        <p data-testid="email-field">
+        <p data-testid="email-field"> {/* requisito 5 */}
           Email:
-          {getEmail}
+          {getEmail} {/* exibe o email do usuário que fez login. */}
         </p>
         <div>
-          <p data-testid="total-field">Despesa Total: 0 </p>
+          <p data-testid="total-field">Despesa Total: 0 </p> {/* requisito 5 */} {/* requisito 8 */}
         </div>
         <div>
-          <p data-testid="header-currency-field">BRL</p>
+          <p data-testid="header-currency-field">BRL</p> {/* requisito 5 */}
         </div>
       </div>
     );

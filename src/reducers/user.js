@@ -1,6 +1,6 @@
 import { EMAIL_LOGIN } from '../actions';
 
-const INITIAL_STATE = {
+const INITIAL_STATE = { // requisito 3 - O estado global possui a chave `email` no formato esperado
   email: '',
 };
 
